@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/main.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+      <!-- 
+        - NAVBAR
+      -->
+
+      <div class="w-full flex justify-center">
+        <div class="navBar flex justify-between items-center h-[3.5rem] w-[80%]">
+          <div class="w-48">
+            <div class="navLogo w-36">
+              <a href="../index.html"
+                ><img src="../assets/icons/Nutmeals Logo ver2.svg" alt=""
+              /></a>
+            </div>
+          </div>
+  
+          <div class="navMain w-64 items-center justify-between flex uppercase">
+            <div>
+              <a
+                href="../pages/about.html"
+                class="hover:bg-primaryButton hover:text-white duration-300 rounded-md py-1 sm:px-4 !px-3"
+                >About</a
+              >
+            </div>
+            <div>
+              <a
+                href="../pages/shop.html "
+                class="hover:bg-primaryButton hover:text-white duration-300 rounded-md py-1 sm:px-4 !px-3"
+                >Shop</a
+              >
+            </div>
+            <div>
+              <a
+                href="../pages/blog.html"
+                class="hover:bg-primaryButton hover:text-white duration-300 rounded-md py-1 sm:px-4 !px-3"
+                >Blog</a
+              >
+            </div>
+          </div>
+          
+  
+          
+  
+          <div
+            class="navbar-right-menu gap-0 sm:gap-4 sm:flex w-48 items-center justify-between hidden"
+          >
+            <a  class="rounded-md hover-fill-white hover:bg-primaryButton py-2 px-2.5 duration-300" href="/cart"
+              ><img
+              class=""
+                alt="add to cart"
+                loading="lazy"
+                width="17"
+                height="17"
+                decoding="async"
+                data-nimg="1"
+                class="duration-300"
+                style="color: transparent"
+                
+                src="../assets/icons/NavBar/white_add_to_cart.svg" /></a
+            ><a class="fill-white-color rounded-md  hover-fill-white bg-primaryButton py-2 px-2.5 duration-300" href="/auth"
+              ><img
+                alt="black_account_profile"
+                loading="lazy"
+                width="18"
+                height="18"
+                decoding="async"
+                data-nimg="1"
+                class="duration-300"
+                style="color: transparent"
+                src="../assets/icons/NavBar/white_account_profile.svg" /></a
+            ><a class="rounded-md  hover-fill-white hover:bg-primaryButton py-2 px-2.5 duration-300" href="/search"
+              ><img
+                alt="search"
+                loading="lazy"
+                width="18"
+                height="18"
+                decoding="async"
+                data-nimg="1"
+                class="duration-300"
+                style="color: transparent"
+                src="../assets/icons/NavBar/white_search.svg" /></a
+            ><a
+              class="hover-fill-white hover:bg-primaryButton px-2.5 duration-300 !rounded-md !py-2 !pl-3 !pr-2"
+              href="/contact"
+              ><img
+                alt="contact _ support"
+                loading="lazy"
+                width="18"
+                height="18"
+                decoding="async"
+                data-nimg="1"
+                class="duration-300"
+                style="color: transparent"
+                src="../assets/icons/NavBar/white_contact_support.svg"
+            /></a>
+          </div>
+        </div>
+      </div>
+
+    <section class="w-[80vw] m-auto h-[90vh] grid place-items-center">
+        <div class="max-w-[450px] flex-shrink-0 w-full shadow-2xl px-12 py-8 rounded-md">
+            <div class="logtabs flex items-center justify-between mb-5">
+                <button class="loglinks active font-semibold text-darkGray w-full py-1"
+                  onclick="logopenTab(event, 'logtab1')">Login</button>
+                <button class="loglinks font-semibold text-darkGray w-full py-1"
+                  onclick="logopenTab(event, 'logtab2')">Register</button>
+              </div>
+            <div>
+                <div id="logtab1" class="logcontent show">
+                    <div class="usersign">
+                        <input type="text" placeholder="username" class="inputf w-full border-b-[2px] border-darkGray py-1 outline-none text-[16px]">
+                    <button id="nextbtn" class="py-1 px-7 hover:bg-primaryColor rounded-md text-darkGray hover:text-bodyColor block my-6 w-fit mx-auto">Next</button>
+                    </div>
+
+                    <div class="passsign">
+                        <input type="password" placeholder="password" class="inputf w-full border-b-[2px] border-darkGray py-1 outline-none text-[16px]">
+                        <div class="flex items-center justify-between py-1">
+                            <button id="backbtn" class="py-1 px-5 relative -left-4 hover:bg-primaryColor rounded-md text-darkGray hover:text-bodyColor block w-fit">Back</button>
+                            <a class="cursor-pointer text-darkGray">forget password</a>
+                        </div>
+                        <button class="py-1 px-7 hover:bg-primaryColor rounded-md text-darkGray hover:text-bodyColor block my-6 w-fit mx-auto">Sign in</button>
+                    </div>
+
+                    <p class="text-[14px] text-gray-400 text-center">OR <br> continue with</p>
+                    <div class="pt-8 flex items-center justify-evenly">
+                        <a class="text-3xl inline-flex hover:bg-primaryColor hover:text-bodyColor transition-all duration-300 w-11 h-11 rounded-full items-center justify-center"><i class="ri-apple-fill"></i></a>
+                        <a class="text-3xl inline-flex hover:bg-primaryColor hover:text-bodyColor transition-all duration-300 w-11 h-11 rounded-full items-center justify-center"><i class="ri-google-fill"></i></a>
+                        <a class="text-3xl inline-flex hover:bg-primaryColor hover:text-bodyColor transition-all duration-300 w-11 h-11 rounded-full items-center justify-center"><i class="ri-fingerprint-line"></i></a>
+                    </div>
+
+                    
+                </div>
+                <div id="logtab2" class="logcontent">
+                    <input type="text" placeholder="First name" class="inputf w-full border-b-[2px] py-1 outline-none text-[16px] border-gray-400 mb-3">
+                    <input type="text" placeholder="Last name" class="inputf w-full border-b-[2px] py-1 outline-none text-[16px] border-gray-400 mb-3">
+                    <input type="text" placeholder="Email" class="inputf w-full border-b-[2px] py-1 outline-none text-[16px] border-gray-400 mb-3">
+                    <input type="text" placeholder="Mobile no" class="inputf w-full border-b-[2px] py-1 outline-none text-[16px] border-gray-400 mb-3">
+                    <input type="text" placeholder="Password" class="inputf w-full border-b-[2px] py-1 outline-none text-[16px] border-gray-400 mb-3">
+                    <div class="flex items-start gap-x-3">
+                        <input type="checkbox" name="check" id="check" class="accent-primaryColor scale-[1.3] border-[1px] mt-2">
+                        <p class="text-gray-500">By creating an account you agree with our Terms of Service, Privacy and User policy.</p>
+                    </div>
+                    <button class="py-1 px-7 hover:bg-primaryColor rounded-md text-darkGray hover:text-bodyColor block my-6 w-fit mx-auto">Register</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="../script.js"></script>
+</body>
+
+</html>
